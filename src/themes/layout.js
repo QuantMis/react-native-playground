@@ -8,6 +8,14 @@ const layout = StyleSheet.create({
         justifyContent: 'space-between', // Optional, for horizontal spacing
         // Add any additional styling as needed
     },
+    container: {
+        flex: 1,
+        backgroundColor: 'black',
+        alignItems: 'start',
+        justifyContent: 'start',
+        padding: 15
+      },
 });
 
 export default layout;
+
