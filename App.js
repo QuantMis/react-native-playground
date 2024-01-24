@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './src/screens/Home';
 import ImagesUc from './src/screens/ImagesUc';
+import LayoutUc from './src/screens/LayoutUc';
 
 export default function App() {
 
@@ -13,6 +14,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="ImagesUc" component={ImagesUc} />
+        <Stack.Screen name="LayoutUc" component={LayoutUc} />
       </Stack.Navigator>
     </NavigationContainer>
   );

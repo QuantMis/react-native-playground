@@ -5,17 +5,22 @@ import typography from "../../themes/typography";
 import palette from "../../themes/palette";
 import Spacer from "./Spacer";
 
+
 const ListItem = ({ item }) => (
-    <View style={{ padding: 15, backgroundColor: "purple", borderRadius: 10, marginBottom: 10}}>
-        <View style={layout.row}>
+    <View style={{ padding: 15, backgroundColor: "purple", borderRadius: 10, marginBottom: 10 }}>
+        <View style={[layout.row, { justifyContent: "space-between" }]}>
             <Text style={[typography.headline, palette.onPrimary]}>{item.title}</Text>
-            <Icon name="chevron-right" size={20} style={palette.onPrimary} />
+            {item.active ?
+                <Icon name="chevron-right" size={20} style={palette.onPrimary} /> :
+                <Icon name="lock" size={20} style={palette.onPrimary} />
+            }
         </View>
         <Spacer height={10}></Spacer>
         <Text style={[typography.subheadline, palette.onPrimary]}>{item.description}</Text>
         <Spacer height={10}></Spacer>
         <Text style={[typography.caption, palette.onPrimary]}>{item.date}</Text>
     </View>
+
 );
 
 export default ListItem;
