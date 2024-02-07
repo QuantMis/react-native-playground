@@ -8,7 +8,10 @@ import layout from '../themes/layout';
 const components = [
     { title: 'Images', description: 'Display images in React Native', date: '17 Jan 2024', routes: 'ImagesUc', active: true },
     { title: 'Layout', description: 'Layouts in React Native', date: '23 Jan 2024', routes: 'LayoutUc', active: true },
-    { title: 'Network', description: 'Network calls in React Native', date: '23 Jan 2024', routes: 'LayoutUc', active: false },
+    { title: 'Network', description: 'Simple Network Calls: Http Get', date: '23 Jan 2024', routes: 'NetworkUc', active: true },
+    { title: 'Stateful', description: 'Making a View Stateful in React Native', date: '6 Jan 2024', routes: 'StatefulUc', active: true },
+    { title: 'Prop Drilling', description: 'Drill props deeply to childrens component', date: '6 Jan 2024', routes: 'PropDrillingUc', active: true },
+    { title: 'Context API', description: 'Sharing states between multiple views', date: '6 Jan 2024', routes: 'StatefulUc', active: true },
 ];
 const Home = ({ navigation }) => {
     const navigateTo = (item) => {
